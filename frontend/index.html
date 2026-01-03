@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinFlex Dashboard</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background: #f4f7f6; padding: 20px; }
+        .container { max-width: 800px; margin: auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        .card { border: 1px solid #ddd; padding: 15px; margin-bottom: 15px; border-radius: 5px; }
+        button { background: #3498db; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; }
+        button:hover { background: #2980b9; }
+        .status { font-weight: bold; color: #27ae60; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>FinFlex Optimization Hub</h1>
+        
+        <div class="card">
+            <h3>Debt Scheduler (Min-Heap)</h3>
+            <p>Status: <span class="status">Algorithm Active</span></p>
+            <button onclick="alert('Connecting to /api/loan...')">Analyze Loans</button>
+        </div>
+
+        <div class="card">
+            <h3>Cashflow Minimizer (Greedy)</h3>
+            <p>Status: <span class="status">Algorithm Active</span></p>
+            <button onclick="alert('Connecting to /api/cashflow...')">Optimize Transactions</button>
+        </div>
+
+        <div class="card">
+            <h3>Budget Tracker (BST)</h3>
+            <p>Status: <span class="status">Algorithm Active</span></p>
+            <button onclick="alert('Connecting to /api/budget...')">Check Recurring Bills</button>
+        </div>
+    </div>
+</body>
+</html>
